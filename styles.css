@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  color: white;
+  z-index: 3;
+  scroll-behavior: smooth;
+}
+
+.mouse {
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  bottom: 40px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 0 auto 0 -26px;
+  position: absolute;
+  width: 26px;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+.mouse span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: block;
+  height: 4px;
+  margin: 6px auto;
+  width: 4px;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes scroll {
+0% {
+  opacity: 1;
+  transform: translateY(0px);
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+100% {
+  opacity: 0;
+  transform: translateY(20px);
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+
+.intro {
+  background: url('https://img.freepik.com/free-vector/cartoon-galaxy-background_23-2148973053.jpg?w=1380&t=st=1702582283~exp=1702582883~hmac=fd93a54662b6e4fe584fc36155f084762e88560b505257597384aba61a5095ea') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Выберите подходящую высоту для размытой области */
+  background: linear-gradient(rgba(193, 0, 255, 0), #bf00ff);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.name {
+  font-size: 300px;
+  margin: -10px 0;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagline {
+  font-size: 32px;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.scroll-down:hover {
+  text-decoration: underline;
+}
+
+.projects {
+  background: linear-gradient(#C100FF, #000000);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+.project-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects h2 {
+  font-size: 3em;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 30px;
+}
+
+.project-button {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  margin: 0 20px;
+}
+
+.project-button:hover {
+  transform: scale(1.05);
+}
+
+.button-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.project-image {
+  width: 48%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-text {
+  margin-top: 10px;
+}
+
+#snowfall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  transform-style: preserve-3d;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  color: red;
+  z-index: 5;
+}
+.star:before {
+  position: absolute;
+  content: '\2726';
+  color: inherit;
+  inset: 0;
+  box-shadow: 0 0 1em .5em #a3c2;
+  filter: drop-shadow(0 0 .5em white);
+  text-shadow: 0 0 .8em #fff5;
+  z-index: 5;
+}
+
+.cry {
+  background: #000;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#c{
+  background:#000;
+  position: absolute;
+}
