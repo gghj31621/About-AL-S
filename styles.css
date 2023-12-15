@@ -57,7 +57,7 @@ body {
 
 
 .intro {
-  background: url('https://img.freepik.com/free-vector/cartoon-galaxy-background_23-2148973053.jpg?w=1380&t=st=1702582283~exp=1702582883~hmac=fd93a54662b6e4fe584fc36155f084762e88560b505257597384aba61a5095ea') center/cover no-repeat;
+  background: url('bg.jpg') no-repeat center center fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
